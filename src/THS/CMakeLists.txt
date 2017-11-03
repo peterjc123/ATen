@@ -36,6 +36,7 @@ ENDIF()
 # When using MSVC
 IF(MSVC)
   # we want to respect the standard, and we are bored of those **** .
+  ADD_DEFINITIONS(-DTH_EXPORTS)
   ADD_DEFINITIONS(-D_CRT_SECURE_NO_DEPRECATE=1)
 ENDIF(MSVC)
 
